@@ -1,3 +1,4 @@
+// Display current Day and Date in the header
 var dateDisplayEl = $("#currentDay");
 
 function displayDate() {
@@ -5,6 +6,7 @@ function displayDate() {
   dateDisplayEl.text(toDay);
 }
 
+// Display background color of user input area as: gray for past time, red for present time, and green for future times
 var curHour = moment().format("H");
 var textBar = $("textarea");
 var saveBtn = $("saveBTN");
@@ -23,6 +25,7 @@ textBar.each(function (i) {
   $(this).val(localStorage.getItem(input))
 });
 
+// Store user input locally 
 $(".saveBtn").on("click", storeLocal);
 
 function storeLocal() {
@@ -33,20 +36,6 @@ function storeLocal() {
   console.log(input)
 }
 
-// function init(){
-//     allStorage();
 
-//   function allStorage() {
-//       debugger;
-//       var values = [],
-//          keys = Object.keys(localStorage),
-//          i = keys.length;
-
-//       while (i--) {
-//           values.push(localStorage.getItem(keys[i]));
-//       }
-//       return values;
-//   }
-// }
 
 setInterval(displayDate, 1000);

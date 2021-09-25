@@ -20,6 +20,8 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+   
+    
   }
   
   .description {
@@ -41,22 +43,29 @@ body {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
-    
   }
   
   .past {
     background-color: #d3d3d3;
-    color: white;
+    color: black;
+    display: flex;
+    align-content: center;
+    font-weight: bold;
+    font-size: 20px;
   }
   
   .present {
     background-color: #ff6961;
-    color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
   }
   
   .future {
     background-color: #77dd77;
-    color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
   }
   
   .saveBtn {
@@ -66,6 +75,9 @@ body {
     background-color: #06aed5;
     color: white;
     width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .saveBtn i:hover {
